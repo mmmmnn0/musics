@@ -1,0 +1,184 @@
+@import url('../../root.css');
+
+/* music.css */
+.musicWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.musicShow {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border: 1px solid var(--c-black);
+    box-shadow: 0 0 20px var(--c-middle-gray);
+    background-color: var(--c-black);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.thumbimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1024px;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.Thumbnail {
+    width: 1024px;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.musicPlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.MusicImage {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.playerContainer {
+    width: 100%;
+    max-width: 600px;
+}
+
+.musicInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.musicTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--c-white);
+}
+
+.musicUploader {
+    font-size: 18px;
+    color: var(--c-white);
+    margin-bottom: 10px;
+}
+
+.musicComments {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid var(--c-black);
+    box-shadow: 0 0 20px var(--c-middle-gray);
+    background-color: var(--c-black);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.musicCommentsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.musicCommentsBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.musicBtnBox {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.musicBtn {
+    background-color: transparent;;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--c-white);
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+.musicBtn:hover {
+    color: var(--c-orange);
+}
+
+.musicStatsBox {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--c-black);
+    margin: 20px;
+}
+
+.musicStats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--c-white);
+}
+
+.musicStats p {
+    margin-top: 5px;
+}
+
+.CommentsIndex {
+    margin-bottom: 20px;
+}
+
+.DescComments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heartIcon {
+    color: var(--c-white);
+    margin-right: 10px;
+}
+
+.heartIcon:hover {
+    color: red;
+}
+
+.pageNavItems .heartIcon.active {
+    background-color: var(--c-blue);
+    color: var(--c-white);
+    border: 1px solid var(--c-blue);
+}
+
+.icon {
+    margin-right: 10px;
+}

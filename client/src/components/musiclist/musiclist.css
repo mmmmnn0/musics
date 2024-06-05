@@ -1,0 +1,67 @@
+@import url(../../root.css);
+
+.mp {
+    font-size: var(--s-medium);
+    color: var(--c-white);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mpItem {
+    border: 1px solid var(--c-bg-dark);
+    background-color: var(--c-bg-dark);
+    width: 150px;
+    height: 220px;
+    display: flex;
+    margin: 20px;
+    font-size: var(--s-medium);
+    color: var(--c-white);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mpImageWrapper {
+    background-color: var(--c-black);
+    border: 1px solid var(--c-bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.mpImg {
+    font-size: var(--s-medium);
+    color: var(--c-white);
+    width: 125px;
+    height: 125px;
+    object-fit: contain; /* 이미지가 잘리지 않도록 설정 */
+}
+
+.mpTitle, .mpUploader {
+    display: block;
+    margin-top: 5px;
+}
+
+.mpTitle {
+    font-size: var(--s-medium);
+    color: var(--c-white);
+}
+
+.mpUploader {
+    font-size: var(--s-medium);
+    color: var(--c-white);
+}
+
+.mpTitle, .mpUploader, .mpViews {
+    margin-top: 5px;
+}

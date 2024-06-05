@@ -1,0 +1,38 @@
+@import url(../../root.css);
+
+.homeWholeWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: inherit;
+  width: inherit;
+}
+
+.homewrapper {
+  height: 100%;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.hsearchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.homeContents {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: inherit;
+  height: auto;
+  min-height: 248px; /*홈화면 스크롤 생기는 문제 여기임*/
+  /* text-align: center;
+  flex-direction: column; */
+}

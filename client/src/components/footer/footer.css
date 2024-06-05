@@ -1,0 +1,33 @@
+@import url('../../root.css');
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: var(--s-small);
+    height: 80px;
+    bottom: 0;
+}
+
+.fList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: var(--c-black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+}
+
+.fListItem {
+    display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 10px;
+    color: var(--c-white);
+    cursor: pointer;
+    letter-spacing: 2px;
+    cursor: pointer;
+}

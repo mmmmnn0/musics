@@ -1,0 +1,112 @@
+@import url('../../root.css');
+
+.authForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: auto;
+}
+
+.authWrapper {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 30px;
+    border: 1px solid var(--c-black);
+    border-radius: var(--b-medium);
+    box-shadow: 0 0 30px var(--c-middle-gray);
+    background-color: var(--c-black);
+}
+
+.pageTitle {
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 25px;
+    font-size: var(--s-large);
+    font-weight: var(--w-bold);
+    color: var(--c-white);
+}
+
+label {
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: var(--c-light-gray);
+}
+
+.authForm input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    font-size: var(--s-medium);
+    letter-spacing: 2px;
+    color: var(--c-white);
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: var(--c-black);
+    border: 1px solid var(--c-middle-gray);
+    border-radius: var(--b-petite);
+    caret-color: var(--c-white);
+}
+
+.authForm input:hover{
+    opacity: 0.7;
+    border: 1px solid var(--c-white);
+}
+
+/* input 입력창 클릭시(hover적용 안한) 스타일 */
+.clicked {
+    background-color: var(--c-black);
+    border: 1px solid var(--c-white);
+}
+
+
+/* 버튼 공통 속성 */
+.authForm button {
+    font-weight: var(--w-bold);
+    font-size: var(--s-medium);
+    -webkit-font-smoothing: antialiased;
+    padding: 14px 20px;
+    margin: 12px 0;
+    border: 1px solid;
+    border-radius: var(--b-medium);
+    cursor: pointer;
+    width: 100%;
+}
+
+/* 버튼 개별 속성 */
+/* 버튼1 */
+.authForm .authBtn1 {
+    background-color: var(--c-white);
+    color: var(--c-black);
+    border-color: var(--c-white);
+}
+
+.authForm .authBtn1:hover {
+    background-color: var(--c-hover-light);
+}
+
+/* 버튼2 */
+.authForm .authBtn2 {
+    background-color: var(--c-black);
+    color: var(--c-white);
+    border-color: var(--c-border-light);
+}
+
+.authForm .authBtn2:hover {
+    background-color: var(--c-dark-gray);
+    border: 1px solid var(--c-white);
+    color: var(--c-white);
+}
+
+.authForm img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: var(--b-large);
+}

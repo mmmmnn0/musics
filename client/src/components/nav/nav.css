@@ -1,0 +1,93 @@
+@import url('../../root.css');
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 30px;
+    background-color: var(--c-black);
+    height: 124px;
+}
+
+.logoIconBox {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex: 2;
+    cursor: pointer;
+}
+
+.logoIcon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-white);
+    cursor: pointer;
+    font-size: var(--s-huge);
+    font-weight: var(--w-bolder);
+    height: 100%;
+}
+
+.navItems {
+    height: 100%;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* nav 버튼 컬러 제외 공통 속성 */
+
+.navItems a {
+    display: inline-block;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 35px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: var(--b-petite);
+}
+
+.navItems a div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navItems a div span {
+    width: 100%;
+    text-decoration: none;
+    font-weight: var(--w-bold);
+    font-size: var(--s-medium);
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 1px;
+    top: 50%;
+}
+
+
+/* 버튼 컬러, hover 컬러 지정 */
+.navBtn {
+    /* 버튼 컬러, 위치 속성*/
+    background-color: var(--c-black);
+    color: var(--c-white);
+    border: 1px solid var(--c-white);
+}
+
+.navBtn:hover {
+    border: 1px solid var(--c-white);
+    background-color: var(--c-white);
+    color: var(--c-black);
+}
+

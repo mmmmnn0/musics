@@ -1,0 +1,113 @@
+@import url('../../root.css');
+
+.pageNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: var(--c-black);
+    height: 100px;
+    width: 1024px;
+}
+
+.pageNavContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pageNavlogoIconBox {
+    display: flex;
+    align-items: center;
+    flex: 2;
+    cursor: pointer;
+}
+
+.pageNavlogoIcon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pageNavlogo {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-white);
+    cursor: pointer;
+    font-size: var(--s-huge);
+    font-weight: var(--w-bolder);
+}
+
+.pageNavsearchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    height: auto;
+}
+
+.pageNavsearchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.pageNavsearchInput {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid var(--c-dark-gray);
+    border-radius: 4px;
+    font-size: var(--s-medium);
+    font-weight: var(--w-bold);
+    letter-spacing: 1.5px;
+    text-align: left;
+}
+
+.pageNavsearchInput::placeholder {
+    text-align: center;
+    font-size: var(--s-small);
+}
+
+.pageNavsearchInput:hover {
+    box-shadow: 0 0 20px var(--c-hover-light);
+}
+
+.pageNavsearchIcon {
+    position: absolute;
+    left: 10px;
+    color: var(--c-dark-gray);
+    font-size: var(--s-medium);
+    pointer-events: none;
+}
+
+.pageNavItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 2;
+    height: 100%;
+}
+
+.pageNavItems a {
+    display: inline-block;
+    padding: 10px 20px;
+    height: auto;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: var(--b-petite);
+    background-color: var(--c-black);
+    color: var(--c-white);
+    border: 1px solid var(--c-white);
+}
+
+.pageNavItems a:hover {
+    background-color: var(--c-white);
+    color: var(--c-black);
+    border: 1px solid var(--c-white);
+}
