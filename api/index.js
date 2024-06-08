@@ -87,5 +87,5 @@ app.use((err, req, res, next) => {
 // 서버 시작 및 MongoDB 연결 시도
 app.listen(process.env.PORT, () => {
     connect();
-    console.log('Connected to ${process.env.PORT}');
+    console.log(`Connected to ${process.env.PORT}`);
 });
