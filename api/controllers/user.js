@@ -39,7 +39,7 @@ export const updatePassword = async (req, res, next) => {
         const user = await User.findById(userId);
         if (!user) {
             console.error("User not found");
-            return res.status(404).json({ success: false, message: "User not found" });
+            return res.status().json({ success: false, message: "User not found" });
         }
 
         // 입력한 현재 비밀번호가 맞는지 확인

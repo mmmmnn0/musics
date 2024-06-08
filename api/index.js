@@ -18,8 +18,18 @@ import commentsRoute from "./routes/comments.js";
 // Express 애플리케이션 인스턴스 생성
 const app = express();
 
-// 환경 변수 로드
-dotenv.config();
+// 조건적으로 환경 변수 로드 (development / production)
+dotenv.config({
+    path: `./.env.${process.env.NODE_ENV || 'development'}`
+  });
+
+if (process.env.NODE_ENV === 'production') {
+    console.log('Production mode');
+    // 프로덕션 환경에 특화된 로깅, 에러 핸들링, 데이터베이스 설정 등
+} else {
+        console.log('Development mode');
+    // 개발 환경에 유용한 설정, 예를 들어, 자세한 로깅, 로컬 데이터베이스 연결 등
+}
 
 // MongoDB 연결 함수
 const connect = async () => {
@@ -45,11 +55,13 @@ const __dirname = dirname(__filename);
 // CORS 옵션
 const corsOption = {
     // 클라이언트의 Origin
-    origin: process.env.CLIENT_URL,
+    origin: [process.env.CLIENT_URL, 'http://localhost:3000'],
 
     // 인증 정보 허용
     credentials: true,
 };
+
+app.use(morgan('combined'));
 
 //모든 도메인에서의 요청을 허용하는 기본 CORS 설정을 사용
 app.use(cors(corsOption));
@@ -68,7 +80,7 @@ app.use("/api/comments", commentsRoute);
 
 app.use('/uploads', express.static('uploads'));
 app.use('/profile', express.static(path.join(__dirname, 'profile')));
-app.use(morgan('combined'));
+
 
 //전역 오류 처리를 위한 미들웨어
 app.use((err, req, res, next) => {

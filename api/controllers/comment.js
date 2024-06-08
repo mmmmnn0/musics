@@ -21,7 +21,7 @@ export const MusicComment = async (req, res) => {
 
     // music 없음 오류
     if (!music) {
-        return res.status(404).end();
+        return res.status().end();
     }
 
     // comment 생성

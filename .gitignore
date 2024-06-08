@@ -2,5 +2,8 @@
 /client/node_modules
 
 .DS_Store
-/api/.env
-/client/.env
+.env*
+/api/.env.development
+/api/.env.production
+/client/.env.development
+/client/.env.production
