@@ -94,7 +94,7 @@
     height: 100%;
 }
 
-.pageNavItems a {
+.pageNavItems button {
     display: inline-block;
     padding: 10px 20px;
     height: auto;
@@ -106,7 +106,7 @@
     border: 1px solid var(--c-white);
 }
 
-.pageNavItems a:hover {
+.pageNavItems button:hover {
     background-color: var(--c-white);
     color: var(--c-black);
     border: 1px solid var(--c-white);

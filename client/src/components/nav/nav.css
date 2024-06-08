@@ -46,7 +46,7 @@
 
 /* nav 버튼 컬러 제외 공통 속성 */
 
-.navItems a {
+.navItems button {
     display: inline-block;
     width: auto;
     padding-left: 20px;
@@ -57,7 +57,7 @@
     border-radius: var(--b-petite);
 }
 
-.navItems a div {
+.navItems button div {
     width: 100%;
     height: 100%;
     display: flex;
@@ -65,7 +65,7 @@
     justify-content: center;
 }
 
-.navItems a div span {
+.navItems button div span {
     width: 100%;
     text-decoration: none;
     font-weight: var(--w-bold);

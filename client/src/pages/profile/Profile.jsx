@@ -119,7 +119,7 @@ const Profile = () => {
                     credentials.profileimg.length > 0 ? (
                         <img
                             src={credentials.profileimg}
-                            alt="profile image"
+                            alt="profile"
                             className="profileimg"
                             onClick={() =>
                                 document.getElementById("imageInput").click()

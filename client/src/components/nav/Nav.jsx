@@ -80,16 +80,16 @@ const Nav = () => {
                         </>
                     ) : (
                         <>
-                            <a className="navBtn" onClick={handleProfileBtn}>
+                            <button className="navBtn" onClick={handleProfileBtn}>
                                 <div className="btnText">
                                     <span>PROFILE</span>
                                 </div>
-                            </a>
-                            <a className="navBtn" onClick={handleLogoutBtn}>
+                            </button>
+                            <button className="navBtn" onClick={handleLogoutBtn}>
                                 <div className="btnText">
                                     <span>LOGOUT</span>
                                 </div>
-                            </a>
+                            </button>
                         </>
                     )}
                 </div>
