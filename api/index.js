@@ -45,7 +45,7 @@ const __dirname = dirname(__filename);
 // CORS 옵션
 const corsOption = {
     // 클라이언트의 Origin
-    origin: 'http://localhost:3000',
+    origin: process.env.CLIENT_URL,
 
     // 인증 정보 허용
     credentials: true,
