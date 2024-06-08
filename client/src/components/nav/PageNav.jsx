@@ -89,7 +89,10 @@ const PageNav = () => {
                 <div className="pageNavItems">
                     {!user ? (
                         <>
-                            <button className="pageNavBtn" onClick={handleLoginBtn}>
+                            <button
+                                className="pageNavBtn"
+                                onClick={handleLoginBtn}
+                            >
                                 <div className="pageNavbtnText">
                                     <span>LOGIN</span>
                                 </div>
@@ -113,7 +116,10 @@ const PageNav = () => {
                                     <span>PROFILE</span>
                                 </div>
                             </button>
-                            <button className="pageNavBtn" onClick={handleLogoutBtn}>
+                            <button
+                                className="pageNavBtn"
+                                onClick={handleLogoutBtn}
+                            >
                                 <div className="pageNavbtnText">
                                     <span>LOGOUT</span>
                                 </div>

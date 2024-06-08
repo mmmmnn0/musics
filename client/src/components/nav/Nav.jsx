@@ -67,16 +67,16 @@ const Nav = () => {
                 <div className="navItems">
                     {!user ? (
                         <>
-                            <a className="navBtn" onClick={handleLoginBtn}>
+                            <button className="navBtn" onClick={handleLoginBtn}>
                                 <div className="btnText">
                                     <span>LOGIN</span>
                                 </div>
-                            </a>
-                            <a className="navBtn" onClick={handleRegisterBtn}>
+                            </button>
+                            <button className="navBtn" onClick={handleRegisterBtn}>
                                 <div className="btnText">
                                     <span>REGISTER</span>
                                 </div>
-                            </a>
+                            </button>
                         </>
                     ) : (
                         <>
